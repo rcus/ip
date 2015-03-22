@@ -1,0 +1,84 @@
+@import url("reset.css");
+
+body {
+  padding-top: 2em;
+  background-color: #f0f0f0;
+  font-family: helvetica, verdana, sans-serif;
+}
+
+h1 {
+  padding: 1em 0;
+  text-align: center;
+  font-size: 2em;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
+/* Table (#iptable) */
+#iptable {
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-collapse: separate;
+  border-radius: 10px;
+}
+
+#iptable tr {
+  line-height: 2em;
+}
+
+#iptable tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+#iptable th {
+  padding-left: 2em;
+  padding-right: 0.5em;
+  text-align: right;
+}
+
+#iptable td {
+  padding-right: 2em;
+}
+
+/* About (#about) */
+#about {
+  display: none;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 75%;
+  height: 75%;
+  margin: auto;
+  padding: 1em;
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+}
+
+#about #close {
+  position: absolute;
+  top: -1em;
+  right: 1em;
+  opacity: 0.5;
+  text-transform: uppercase;
+} 
+
+/* Footer (footer) */
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0.5em;
+  opacity: 0.5;
+  font-size: 0.8em;
+}
