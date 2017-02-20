@@ -1,5 +1,5 @@
 $( document ).ready( function() {
-  var url = "http://ipinfo.io/";
+  var url = "//ipinfo.io/";
 
   $.get( url + window.location.pathname, function( data ) {
     var location = (data.city ? data.city + ", " : "") + (data.region ? data.region + ", " : ""),
