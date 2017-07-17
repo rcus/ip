@@ -1,7 +1,7 @@
 $( document ).ready( function() {
   var url = "//ipinfo.io/";
 
-  $.get( url + window.location.pathname, function( data ) {
+  $.get( url, function( data ) {
     var location = (data.city ? data.city + ", " : "") + (data.region ? data.region + ", " : ""),
         network = "<a href='" + url + data.org.substr(0, data.org.indexOf(" ")) + "'>" + data.org.substr(data.org.indexOf(" ")+1) + "</a>";
 

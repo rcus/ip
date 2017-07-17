@@ -1,4 +1,4 @@
-#rcus/ip
+# tornroth/ip
 
 This is a service based on [ipinfo.io](http://ipinfo.io). Feel free to use it.
 
