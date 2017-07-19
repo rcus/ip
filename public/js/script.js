@@ -11,7 +11,7 @@ $( document ).ready( function() {
     $( ".network" ).html( network );
     $( ".hostname" ).text( data.hostname );
 
-    $.get( "js/countries.json", function( c ) {
+    $.get( "countries.json", function( c ) {
       $( ".location" ).append( c[data.country] );
     });
   }, "jsonp");
