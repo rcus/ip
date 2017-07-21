@@ -1,4 +1,4 @@
-$( document ).ready( function() {
+(function(){
   var url = "//ipinfo.io/";
 
   $.get( url, function( data ) {
@@ -6,7 +6,7 @@ $( document ).ready( function() {
         network = "<a href='" + url + data.org.substr(0, data.org.indexOf(" ")) + "'>" + data.org.substr(data.org.indexOf(" ")+1) + "</a>";
 
     $( document ).attr( "title", data.ip );
-    $( "#header" ).text( data.ip );
+    $( ".ip" ).text( data.ip );
     $( ".location" ).text( location );
     $( ".network" ).html( network );
     $( ".hostname" ).text( data.hostname );
@@ -16,7 +16,11 @@ $( document ).ready( function() {
     });
   }, "jsonp");
 
-  $( ".toggleAbout" ).click( function() {
-    $( "#about" ).fadeToggle();
+  document.querySelector('.about .header').innerText = window.location.hostname;
+
+  [].forEach.call(document.querySelectorAll('.toggle-about'), function(toggler) {
+    toggler.addEventListener('click', function() {
+      document.querySelector('.about').classList.toggle('hidden');
+    });
   });
-});
+})();
