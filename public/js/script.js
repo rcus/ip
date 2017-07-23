@@ -28,12 +28,12 @@
     request.open('GET', 'countries.json', true);
 
     request.onload = function() {
-      var country = ', ' + data.country;
+      var country = data.country;
       if (request.status >= 200 && request.status < 400) {
         var c = JSON.parse(request.responseText);
-        country = ', ' + c[data.country];
+        country = c[country];
       }
-      document.querySelector('.location').innerText += country;
+      document.querySelector('.location').innerText += (location ? ', ' : '') + country;
     };
 
     request.send();
