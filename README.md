@@ -1,6 +1,6 @@
 # tornroth/ip
 
-This is a service based on [geoiplookup.io](http://geoiplookup.io). Feel free to use it.
+This is a service based on [geoiplookup.io](https://geoiplookup.io). Feel free to use it.
 
 ## Prerequisites
 
