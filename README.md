@@ -1,6 +1,6 @@
 # tornroth/ip
 
-This is a service based on [ipinfo.io](http://ipinfo.io). Feel free to use it.
+This is a service based on [geoiplookup.io](http://geoiplookup.io). Feel free to use it.
 
 ## Prerequisites
 
@@ -17,8 +17,8 @@ You will need the following things properly installed on your computer.
 
 ## Running / Development
 
-* `npm start` or `gulp`
-* Visit your app at [http://localhost:8000](http://localhost:8000).
+* `npm start`
+* Visit your app at [http://localhost:8080](http://localhost:8080).
 
 # License
 
