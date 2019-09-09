@@ -2,13 +2,6 @@
 
 This is a service based on [geoiplookup.io](https://geoiplookup.io). Feel free to use it.
 
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-
 ## Installation
 
 * `git clone https://github.com/tornroth/ip`
@@ -24,7 +17,7 @@ You will need the following things properly installed on your computer.
 
 ## [ISC](https://opensource.org/licenses/ISC)
 
-Copyright 2017 Marcus Törnroth
+Copyright 2015-2019 Marcus Törnroth
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
