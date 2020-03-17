@@ -9,9 +9,7 @@
     if (this.status >= 200 && this.status < 400) {
       var data = JSON.parse(this.response),
         location = [data.city, data.region, data.country_name]
-          .filter(function (item, pos, arr) {
-            return arr.indexOf(item) === pos;
-          })
+          .filter(Boolean)
           .join(', '),
         hostname = (data.hostname !== data.ip && data.hostname) || '';
 
