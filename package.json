@@ -7,8 +7,5 @@
   "repository": "",
   "scripts": {
     "start": "http-server"
-  },
-  "devDependencies": {
-    "http-server": "^0.12.1"
   }
 }
