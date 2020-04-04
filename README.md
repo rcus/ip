@@ -4,13 +4,26 @@ This is a service based on [geoiplookup.io](https://geoiplookup.io). Feel free t
 
 ## Installation
 
-* `git clone https://github.com/tornroth/ip`
-* `cd ip`
-* `npm install`
+```
+git clone https://github.com/tornroth/ip
+cd ip
+npm install
+```
 
 ## Running / Development
 
-* `npm start`
+* Install `http-server` globally
+
+```
+npm i -g http-server
+```
+
+* Run
+
+```
+http-server
+```
+
 * Visit your app at [http://localhost:8080](http://localhost:8080).
 
 # License
