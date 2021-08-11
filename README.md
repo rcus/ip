@@ -1,36 +1,16 @@
-# tornroth/ip
+# vettig/ip
 
 This is a service based on [geoiplookup.io](https://geoiplookup.io). Feel free to use it.
 
-## Installation
-
-```
-git clone https://github.com/tornroth/ip
-cd ip
-npm install
-```
-
 ## Running / Development
 
-* Install `http-server` globally
-
-```
-npm i -g http-server
-```
-
-* Run
-
-```
-http-server
-```
-
-* Visit your app at [http://localhost:8080](http://localhost:8080).
+Clone this repo and use a local server, ie [http-server](https://www.npmjs.com/package/http-server).
 
 # License
 
 ## [ISC](https://opensource.org/licenses/ISC)
 
-Copyright 2015-2019 Marcus Törnroth
+Copyright 2015-2021 Marcus Törnroth
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
