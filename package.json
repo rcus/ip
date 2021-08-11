@@ -1,8 +1,0 @@
-{
-  "name": "ip",
-  "version": "1.2.0",
-  "description": "A service to show your current IP address.",
-  "author": "Marcus Törnroth",
-  "license": "ISC",
-  "repository": ""
-}
