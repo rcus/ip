@@ -1,6 +1,6 @@
 (function () {
   const url = 'https://json.geoiplookup.io/'
-  const el = id => document.getElementById(id)
+  const el = tag => document.getElementsByTagName(tag)[0]
   const div = inner => {
     const elem = document.createElement('div')
     elem.innerText = inner
@@ -12,9 +12,9 @@
     .then(({ ip, city, region, country_name: countryName, isp, hostname }) => {
       document.title = ip
 
-      el('top').append(div(ip))
+      el('header').append(div(ip))
 
-      el('bottom').append(
+      el('section').append(
         div([city, region, countryName].filter(Boolean).join(', ')),
         div(isp),
         div(hostname)
