@@ -1,34 +1,23 @@
 (function () {
-  'use strict';
-  var url = 'https://json.geoiplookup.io/',
-    request = new XMLHttpRequest();
+  const url = 'https://json.geoiplookup.io/'
+  const el = id => document.getElementById(id)
+  const div = inner => {
+    const elem = document.createElement('div')
+    elem.innerText = inner
+    return elem
+  }
 
-  request.open('GET', url, true);
+  window.fetch(url)
+    .then(response => response.json())
+    .then(({ ip, city, region, country_name: countryName, isp, hostname }) => {
+      document.title = ip
 
-  request.onload = function () {
-    if (this.status >= 200 && this.status < 400) {
-      var data = JSON.parse(this.response),
-        location = [data.city, data.region, data.country_name]
-          .filter(Boolean)
-          .join(', '),
-        hostname = (data.hostname !== data.ip && data.hostname) || '';
+      el('top').append(div(ip))
 
-      document.title = data.ip;
-      document.querySelector('.ip').innerText = data.ip;
-      document.querySelector('.location').innerText = location;
-      document.querySelector('.network').innerText = data.isp;
-      document.querySelector('.hostname').innerText = hostname;
-
-    }
-  };
-
-  request.send();
-
-  document.querySelector('.about .header').innerText = window.location.hostname;
-
-  [].forEach.call(document.querySelectorAll('.toggle-about'), function (toggler) {
-    toggler.addEventListener('click', function () {
-      document.querySelector('.about').classList.toggle('hidden');
-    });
-  });
-})();
+      el('bottom').append(
+        div([city, region, countryName].filter(Boolean).join(', ')),
+        div(isp),
+        div(hostname)
+      )
+    })
+})()
