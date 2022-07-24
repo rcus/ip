@@ -1,4 +1,4 @@
-# vettig/ip
+# tornroth/ip
 
 This is a service based on [geoiplookup.io](https://geoiplookup.io). Feel free to use it.
 
@@ -10,7 +10,7 @@ Clone this repo and use a local server, ie [http-server](https://www.npmjs.com/p
 
 ## [ISC](https://opensource.org/licenses/ISC)
 
-Copyright 2015-2021 Marcus Törnroth
+Copyright 2015-2022 Marcus Törnroth
 
 Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 
